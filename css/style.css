@@ -1,0 +1,42 @@
+.item{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.caption {
+  position: absolute;
+  bottom:-50px;
+  left:15px;
+  right: 15px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.item:hover .caption{
+  opacity: 1;
+  bottom: 15px;
+}
+
+#boxContainer
+{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+
+}
+#innerBox
+{
+  width: 50%;
+  height: 500px;
+  background-image: url(../images/portfolio-1.jpg);
+  background-size: cover;
+  transform: scale();
+}
+#innerBox i {
+  font-size: 25px;
+  cursor: pointer;
+}
